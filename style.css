@@ -13,12 +13,12 @@ body {
 }
 .content:before {
     content: "";
-    position:fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background:url(./pic1.jpg) no-repeat center fixed;
+    background:url(pexels-gdtography-984162.jpg) no-repeat center fixed;
     background-size: cover;
     z-index: -1;
 }
@@ -92,6 +92,7 @@ body {
     text-transform: uppercase;
     animation: flicker 1.5s infinite alternate;
     margin-top: 100px;
+    z-index: 1;
   }
   
   h1::-moz-selection {
@@ -161,12 +162,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:url(./pic2.jpg);
+    background-image:url(pexels-nao-triponez-129207.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(5px);
     -webkit-filter: blur(5px);
+    z-index: -1;
 }
 .wrapper2{
     margin: 0 auto;
@@ -207,7 +209,7 @@ body {
 }
 .div1{
     background-color: #b89d64;
-    background-image: url(./logos/logo1.png);
+    background-image: url(logos/logo1.png);
     background-repeat: no-repeat ;
     background-position: center;
 }
@@ -216,13 +218,13 @@ body {
 }
 .div2{
     background-color: #513826;
-    background-image: url(./logos/logo2.png);
+    background-image: url(logos/logo2.png);
     background-repeat: no-repeat ;
     background-position: center;
 }
 .div3{
     background-color: #2b1b13;
-    background-image: url(./logos/logo3.png);
+    background-image: url(logos/logo3.png);
     background-repeat: no-repeat ;
     background-position: center;
 }
@@ -239,21 +241,7 @@ ul{
     grid-column: span 3;
 }
 
-.content3::before{
-    content: '';
-    background-image: url(./pic3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: -2;
-    transition: all;
-    animation: slide infinite 10s;
-}
+
 @keyframes slide{
     50%{
         
@@ -278,20 +266,27 @@ ul{
     padding:1em;
     grid-column: 1/4;
     grid-gap: 1em;
+    z-index: 1;
 }
 .text {
+    z-index: 5;
     font-size: 35px;
     color: white;
     width: 30%;
     margin-top: 60px;
+    z-index: 1;
 }
-.wrapper3 .firstDiv {
-    grid-column: 1/2;
+.firstDiv {
+    grid-column: 3/4;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
 }
 .wrapper3 .secondDiv {
     grid-column: 3/4;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 }
 .wrapper3 .secondDiv span {
     font-size: 35px;
