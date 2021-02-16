@@ -21,7 +21,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background:black;
+    background:url(./pic2.jpg)
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
