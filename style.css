@@ -329,10 +329,6 @@ ul{
     .navbar .logo{
         padding: 0 0.2em;
     }
-    .content2{
-        font-size: 10px;
-        max-width: 500px;
-    }
     .wrapper2{
         margin: 0 auto;
         width: 90%;
@@ -356,6 +352,8 @@ ul{
     }
     .wrapper3 h1{
     font-size:25px;
+    align-self: center;
+    justify-self: center;
     }
     .text{
     font-size:25px;
