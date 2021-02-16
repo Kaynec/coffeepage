@@ -11,24 +11,24 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.content:before {
-    content: "";
-    position: absolute;
+
+#content::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
-    background:url(pexels-gdtography-984162.jpg) no-repeat center fixed;
+    bottom: 0;
+    background-image:url(pexels-nao-triponez-129207.jpg);
+    background-position: center;
     background-size: cover;
-    z-index: -1;
-}
-.content {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: grid;
-    z-index: 1;
-    position: relative;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: -2;
+    max-width: 100%;
 }
 .navbar {
     position: fixed;
@@ -146,30 +146,9 @@ body {
     left: 30%;
     right: 1%;
     flex: 1;
+    z-index: 2;
 }
 
-.content2 {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    }
-.content2::before{
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image:url(pexels-nao-triponez-129207.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    z-index: -1;
-}
 .wrapper2{
     margin: 0 auto;
     width: 90%;
@@ -327,12 +306,12 @@ ul{
 
 
 @media screen and (max-width:500px){
-    .content h1{
+    #content h1{
         width: 80%;
         font-size: 22px;
         margin-left: 10px;
     }
-    .content .disk{
+    #content .disk{
         text-align: center;
         left: 2%;
     }
